@@ -1,0 +1,49 @@
+Git fa riferimento a una cartelle locale ed e usato come ambiente di sviluppo che permette di vedere la hystori del porgetto per passare a una versione precedende. possiede anche una repositori remoto vuol dire un server che permette di replicare esattamnete cio che ho fatto in maniera locale. ci sono vari servizio che condedono questo servizio. codespace è  una macchina virtuale con preinstalatto linux con altri software e l'accesso viene tramite http e https e un caso molto colpeto di cloud computing.
+Cloud computing non è come drive perchè noi abbiamo un processore che esegue il nostro codice che e su una machina che non conosco la posizione. 
+
+ing git noi abbioma sostanzialmente tre aree una che e il local storage una cartella del nostro computer dentro ci salviamo dei file poi un altra area che e chiamata stage area e l'altra e chiamata commit area.
+per iniziare bisogna leggere la versione nella cartalle locale e nulla viene traciatto e come se git non ci fosse se pero a un certo punto decido di tracciare o memorizare la versione di un file e devo andare a metterlo nella stage area e per farlo devo fare git add index.html da questo momneto non vengono segnate la modifiche. per tutti i file il porcedimento e lo stesso viene tenuto traccia quando vado a posizionare il file nell'area dei commit. in pratica prende tutto nella stage area e prende la versione. e segna con un messagio ovvero -m "messagio" ed cosi i file nella stage area sono presi cosi come sono e vengono salvati. Git dopo il commit pulisce la stage area. abbiamo una repositori anche in remoto che nono c'è in locale. 
+git push per mettere le modifiche non in locale ma in cloud e viene replicato tutta la storia dei commit se non viene specificato.
+
+codespace non centra niente con git e solo una featur aggiuntiva
+
+si può fare sempre il download del progetto in remoto e metterli in locale. attenzione viene presa solo il file non la storia per prendere la storia si fa 
+git clone http: (indirizzio della cartella con la storia anche).
+
+l'altra carateristica e codespace è una featurs che fa parte di github.
+codespace e un computer o machina virtuale. 
+quando si crea un nuovo code space fa git clone con il repositori in automatico. 
+
+le cartelle di coloro verde nel terminale di git e una cartella pubblica che consente l'accesso di tutti.
+con il comando top vengo mostrati tutti i processi che sono in corso in quel momento. 
+
+per prima cosa si aggiunge il file 
+git log fa vedere lo storico dei comint che e sempre uno. ogni commint ha un codice bash che e fatto dalla macchina e dipende da cose c'è e che tipo sono i file commitatti.
+
+nella parte grafica che si chiama controllo codice sorgente che permette tramite propunt dei comandi e anche con l'utilizzo del tasto più per aggiungerlo nella stage area.
+
+clicaddo sui file permette di vedere il fine in dui riquadri che mostra a sinistra il codice prima della modifica a destra sono visualizate in verde le righe aggiunte in rosso quelle rimosse.
+
+
+per risovere il problema di descincronizazione le soluzioni sono due il rebase o merge
+
+o il fast for word fa si fa se non ci sono conflitti e fa un rebase. se non può farlo dice di fare la merge
+
+si va a inserire i commint discordi in ordine cronligico e lo fa dasolo ma se volgio intervenire per decidere su come intrervenire su una hystori e la merge prima di arrivare alla soluzione lui mi va vedere tutti i conflitti e spetta a me sistemarli.
+per fare il rebase uno e configurando git che metta il ribase oppure con il comando pull (rebase).
+git help everyday da la guida per i comandi nel terminale.
+
+Seconda lezione appunti
+
+il git hub pull --no-rebase serve per decidere uqle dei file tenere nei file con lo stesso nome e in conflitto nella repositori.
+si possono procedere in vari modi tenento il file di una parte o un file di un altra parte con il merge conbina i file
+
+i larove possono avere più ramificazioni ma il main e gli elementi principali deve gestirlo e accettare le proposte di modifiche per il merge.
+in modo da lasciare il codice intatto
+in basso a sinistra si può vedere dove si sta vedendo dove vi sta lavorando e cliccandoci sposra si potra decidere di crare un nuovo Brach o scegliere su quale lavorare 
+in qualsiasi momento si può passare da qualsiasi parte e scegliere anche quale versione del brach tenere o modificare oppure sceglie di unirle decidendo cosa tenere e cosa buttare
+si può unira anche con il main:
+per farlo si va sul main e si sceglie conquale brach si vuole fare il merge
+per allinere i file con il ramo bisogna fare un pull,.
+il brach non deve essere per forza publicato
+Fetch o recupera ser per recuperare i rami nel repositori in remoto.
